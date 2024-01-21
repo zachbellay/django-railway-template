@@ -28,3 +28,19 @@ chmod +x setup_database.sh
 ```bash
 python manage.py migrate
 ```
+
+
+
+## Notes to incorporate fixes:
+
+
+If running python manage.py migrate doesn't work because of a permissions issue run:
+
+ALTER DATABASE your_database_name OWNER TO new_owner;
+
+---
+
+Get django secret key from env variable
+
+---
+
